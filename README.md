@@ -132,7 +132,7 @@ Todo_List_web/
 ## Step 1 — Clone Repository
 
 ```bash
-git clone https://github.com/your-username/todo-list-laravel.git
+https://github.com/ahmadmirza2917/Todo_List_web.git
 ```
 
 ---
@@ -140,7 +140,7 @@ git clone https://github.com/your-username/todo-list-laravel.git
 ## Step 2 — Navigate to Project Folder
 
 ```bash
-cd todo-list-laravel
+cd Todo_List_web
 ```
 
 ---
@@ -169,7 +169,7 @@ Update the `.env` file:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=todo_list_web
+DB_DATABASE=Todo_List_web
 DB_USERNAME=root
 DB_PASSWORD=
 ```
