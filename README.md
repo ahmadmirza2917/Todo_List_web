@@ -1,39 +1,94 @@
 # 📝 Laravel To-Do List Management System
 
-A complete **Laravel-based To-Do List Management System** developed for the course **CSC336 – Web Technologies** at COMSATS University Islamabad, Vehari Campus.
+<div align="center">
 
-This project demonstrates the implementation of a modern web application using the **Laravel PHP Framework** following the **MVC (Model–View–Controller)** architecture. The system provides full CRUD functionality along with task priority management, status tracking, filtering, and dashboard statistics.
+![Laravel](https://img.shields.io/badge/Laravel-11.x-red?style=for-the-badge&logo=laravel)
+![PHP](https://img.shields.io/badge/PHP-8.x-blue?style=for-the-badge&logo=php)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.x-purple?style=for-the-badge&logo=bootstrap)
+![License](https://img.shields.io/badge/License-Educational-green?style=for-the-badge)
+
+### CSC336 — Web Technologies Semester Project  
+### COMSATS University Islamabad, Vehari Campus
+
+</div>
 
 ---
 
-# 📌 Features
+# 📌 Project Overview
 
-✅ Create new tasks  
-✅ View all tasks in a structured dashboard  
-✅ Update task details  
-✅ Delete tasks with confirmation dialog  
-✅ Task priority levels (Low / Medium / High)  
-✅ Task status management (Pending / Completed)  
-✅ Status toggle functionality  
-✅ Filter tasks by priority and status  
-✅ Real-time statistics dashboard  
-✅ Server-side form validation  
-✅ Flash success/error messages  
-✅ Responsive UI using Bootstrap 5  
+The **Laravel To-Do List Management System** is a complete web-based task management application developed using the **Laravel PHP Framework** following the **MVC (Model–View–Controller)** architecture.
+
+The system allows users to:
+
+- Create tasks
+- Update tasks
+- Delete tasks
+- Track task status
+- Manage task priorities
+- Filter tasks
+- View dashboard statistics
+
+This project demonstrates practical implementation of Laravel routing, controllers, Eloquent ORM, Blade templating, form validation, and Bootstrap-based UI development.
+
+---
+
+# 🎯 Project Objectives
+
+| Objective ID | Description |
+|--------------|-------------|
+| PO-1 | Implement complete CRUD functionality using Laravel MVC architecture |
+| PO-2 | Add task priority, due dates, filtering, and statistics dashboard |
+| PO-3 | Follow clean coding standards and RESTful routing conventions |
+| PO-4 | Develop a responsive and user-friendly interface using Bootstrap |
+
+---
+
+# ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| ✅ Create Tasks | Add new tasks with title, description, due date, and priority |
+| ✅ Read Tasks | Display all tasks in a structured dashboard |
+| ✅ Update Tasks | Modify existing task details |
+| ✅ Delete Tasks | Remove tasks with confirmation dialog |
+| ✅ Priority Management | Low, Medium, High priority levels |
+| ✅ Status Tracking | Pending / Completed task states |
+| ✅ Status Toggle | One-click task completion toggle |
+| ✅ Filtering | Filter tasks by priority and status |
+| ✅ Statistics Dashboard | Real-time task statistics |
+| ✅ Validation | Server-side form validation |
+| ✅ Flash Messages | Success and error notifications |
+| ✅ Responsive UI | Mobile-friendly Bootstrap interface |
 
 ---
 
 # 🛠️ Technologies Used
 
-| Technology | Purpose |
-|------------|---------|
-| Laravel 11.x | PHP Framework |
-| PHP 8.x | Backend Programming |
-| MySQL | Database Management |
-| Blade Template Engine | Dynamic Views |
-| Bootstrap 5 | Frontend Styling |
-| Composer | Dependency Management |
-| Git & GitHub | Version Control |
+| Technology | Version | Purpose |
+|------------|----------|---------|
+| Laravel | 11.x | PHP Web Framework |
+| PHP | 8.x | Backend Programming |
+| MySQL | Latest | Database Management |
+| Bootstrap | 5.x | Frontend UI Design |
+| Blade | Built-in | Templating Engine |
+| Composer | Latest | Dependency Manager |
+| VS Code | Latest | Code Editor |
+| Git & GitHub | Latest | Version Control |
+
+---
+
+# 🏗️ System Architecture
+
+The project follows the **MVC (Model–View–Controller)** architecture.
+
+| Component | Responsibility |
+|-----------|---------------|
+| Model | Handles database interaction |
+| View | Handles user interface |
+| Controller | Handles business logic and requests |
+| Routes | Define application URLs |
+| Database | Stores task records |
 
 ---
 
@@ -43,112 +98,355 @@ This project demonstrates the implementation of a modern web application using t
 Todo_List_web/
 │
 ├── app/
-│   ├── Http/Controllers/
-│   ├── Models/
+│   ├── Http/
+│   │   └── Controllers/
+│   │       └── TaskController.php
+│   │
+│   └── Models/
+│       └── Task.php
 │
 ├── database/
 │   ├── migrations/
-│   ├── seeders/
+│   └── seeders/
+│
+├── public/
 │
 ├── resources/
-│   ├── views/
+│   └── views/
+│       ├── layouts/
+│       ├── tasks/
+│       └── components/
 │
 ├── routes/
 │   └── web.php
 │
-├── public/
 ├── .env
 ├── composer.json
 └── README.md
+```
 
-⚙️ Installation Guide
-Step 1 — Clone Repository
+---
+
+# ⚙️ Installation Guide
+
+## Step 1 — Clone Repository
+
+```bash
 git clone https://github.com/your-username/todo-list-laravel.git
-Step 2 — Move to Project Folder
+```
+
+---
+
+## Step 2 — Navigate to Project Folder
+
+```bash
 cd todo-list-laravel
-Step 3 — Install Dependencies
+```
+
+---
+
+## Step 3 — Install Composer Dependencies
+
+```bash
 composer install
-Step 4 — Configure Environment File
+```
 
-Copy .env.example file:
+---
 
+## Step 4 — Create Environment File
+
+```bash
 cp .env.example .env
+```
 
-Then update database configuration inside .env:
+---
 
+## Step 5 — Configure Database
+
+Update the `.env` file:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
 DB_DATABASE=todo_list_web
 DB_USERNAME=root
 DB_PASSWORD=
-Step 5 — Generate Application Key
+```
+
+---
+
+## Step 6 — Generate Application Key
+
+```bash
 php artisan key:generate
-Step 6 — Run Database Migrations
+```
+
+---
+
+## Step 7 — Run Database Migrations
+
+```bash
 php artisan migrate
-Step 7 — (Optional) Run Seeder
+```
+
+---
+
+## Step 8 — Run Database Seeder (Optional)
+
+```bash
 php artisan db:seed
-Step 8 — Start Development Server
+```
+
+---
+
+## Step 9 — Start Laravel Development Server
+
+```bash
 php artisan serve
+```
 
-Now open:
+---
 
+## Step 10 — Open Application
+
+```bash
 http://127.0.0.1:8000
-🗄️ Database Schema
-Table: tasks
-Column	Type	Description
-id	BIGINT	Primary Key
-title	VARCHAR	Task Title
-description	TEXT	Task Description
-due_date	DATE	Due Date
-priority	ENUM	Low / Medium / High
-status	ENUM	Pending / Completed
-created_at	TIMESTAMP	Record Created Time
-updated_at	TIMESTAMP	Last Updated Time
-🚀 Application Routes
-Method	Route	Purpose
-GET	/	Show all tasks
-POST	/tasks	Store new task
-GET	/tasks/{task}/edit	Edit task form
-PUT	/tasks/{task}	Update task
-PATCH	/tasks/{task}/toggle	Toggle task status
-DELETE	/tasks/{task}	Delete task
-GET	/about	About page
-📸 Screenshots
-Dashboard
+```
 
-Add Task
+---
 
-Edit Task
+# 🗄️ Database Schema
 
-Filter Feature
+## Table: `tasks`
 
-Completed Tasks
+| Column Name | Data Type | Description |
+|-------------|-----------|-------------|
+| id | BIGINT | Primary Key |
+| title | VARCHAR(255) | Task title |
+| description | TEXT | Task description |
+| due_date | DATE | Task deadline |
+| priority | ENUM | Low / Medium / High |
+| status | ENUM | Pending / Completed |
+| created_at | TIMESTAMP | Record creation time |
+| updated_at | TIMESTAMP | Last update time |
 
-🧠 Key Concepts Implemented
-MVC Architecture
-Laravel Routing
-Controllers & Models
-Blade Templating
-Eloquent ORM
-Query Scopes
-Form Validation
-RESTful APIs
-CRUD Operations
-Bootstrap UI Design
-📚 Learning Outcomes
+---
 
-Through this project, the following concepts were learned:
+# 🌐 Application Routes
 
-Laravel Framework Development
-CRUD-based Web Applications
-Database Design & Migration
-Query Filtering using Eloquent Scopes
-Server-side Validation
-Responsive Frontend Design
-Git & GitHub Version Control
-🔮 Future Improvements
-User Authentication
-Role-Based Access Control
-Task Categories & Tags
-Pagination
-Due Date Notifications
-Export to PDF/CSV
-Cloud Deployment
+| HTTP Method | URI | Controller Method | Purpose |
+|-------------|-----|------------------|---------|
+| GET | / | index() | Show all tasks |
+| POST | /tasks | store() | Save new task |
+| GET | /tasks/{task}/edit | edit() | Show edit form |
+| PUT | /tasks/{task} | update() | Update task |
+| PATCH | /tasks/{task}/toggle | toggleStatus() | Toggle task status |
+| DELETE | /tasks/{task} | destroy() | Delete task |
+| GET | /about | about() | About page |
+
+---
+
+# 🧠 Core Functionalities
+
+## CRUD Operations
+
+| Operation | Description |
+|-----------|-------------|
+| Create | Add new tasks |
+| Read | Display tasks |
+| Update | Edit task information |
+| Delete | Remove tasks |
+
+---
+
+## Filtering System
+
+| Filter Type | Options |
+|-------------|---------|
+| Status | All, Pending, Completed |
+| Priority | All, High, Medium, Low |
+
+---
+
+## Task Priorities
+
+| Priority | Badge Color |
+|----------|-------------|
+| High | 🔴 Red |
+| Medium | 🟡 Yellow |
+| Low | 🟢 Green |
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Dashboard
+
+```md
+screenshots/1.png
+```
+
+![Dashboard](screenshots/1.png)
+
+---
+
+## ➕ Add New Task
+
+```md
+screenshots/2.png
+```
+
+![Add Task](screenshots/2.png)
+
+---
+
+## ✏️ Edit Task
+
+```md
+screenshots/4.png
+```
+
+![Edit Task](screenshots/4.png)
+
+---
+
+## 🔍 Filter Feature
+
+```md
+screenshots/6.png
+```
+
+![Filter](screenshots/6.png)
+
+---
+
+## ✅ Completed Tasks
+
+```md
+screenshots/5.png
+```
+
+![Completed](screenshots/5.png)
+
+---
+
+# 🔐 Validation Rules
+
+| Field | Validation Rule |
+|-------|----------------|
+| title | Required |
+| priority | Must be Low, Medium, or High |
+| due_date | Must be valid date |
+| status | Pending or Completed |
+
+---
+
+# 📊 Dashboard Statistics
+
+The application dashboard displays:
+
+| Statistic | Description |
+|-----------|-------------|
+| Total Tasks | Total number of tasks |
+| Pending Tasks | Tasks not completed |
+| Completed Tasks | Finished tasks |
+
+---
+
+# 🚀 Laravel Concepts Used
+
+| Concept | Usage |
+|---------|------|
+| Routing | URL management |
+| Controllers | Request handling |
+| Models | Database interaction |
+| Blade Templates | Dynamic frontend |
+| Eloquent ORM | Database queries |
+| Query Scopes | Filtering tasks |
+| Validation | Secure user input |
+| Middleware | Request processing |
+| Migrations | Database schema |
+
+---
+
+# 📚 Learning Outcomes
+
+After completing this project, the following concepts were learned:
+
+- Laravel Framework Development
+- MVC Architecture
+- CRUD Operations
+- RESTful Routing
+- Database Migrations
+- Eloquent ORM
+- Blade Templating
+- Form Validation
+- Bootstrap UI Development
+- Git & GitHub Version Control
+
+---
+
+# 🔮 Future Enhancements
+
+| Feature | Description |
+|---------|-------------|
+| 🔐 Authentication | User login and registration |
+| 👥 Role Management | Admin/User roles |
+| 🏷️ Categories | Task categories and tags |
+| 📄 Pagination | Better task navigation |
+| 🔔 Notifications | Due date reminders |
+| 📤 Export | Export to PDF/CSV |
+| ☁️ Deployment | Cloud hosting support |
+
+---
+
+# 👨‍💻 Author Information
+
+| Field | Details |
+|------|---------|
+| Name | Ahmad Mirza |
+| Student ID | CIIT/SP24-BSSE-002/VHR |
+| Degree Program | BS Software Engineering |
+| University | COMSATS University Islamabad |
+| Campus | Vehari Campus |
+
+---
+
+# 👩‍🏫 Instructor
+
+| Field | Details |
+|------|---------|
+| Instructor Name | Ma’am Yasmeen Jana |
+| Course | CSC336 — Web Technologies |
+| Semester | Spring 2026 |
+
+---
+
+# 🔗 GitHub Repository
+
+```bash
+https://github.com/your-username/todo-list-laravel
+```
+
+---
+
+# 🌍 Live Deployment
+
+```bash
+https://your-project-link.com
+```
+
+---
+
+# 📄 License
+
+This project is developed for **educational purposes only**.
+
+---
+
+# ⭐ Support
+
+If you like this project, don't forget to ⭐ star the repository on GitHub.
+
+---
