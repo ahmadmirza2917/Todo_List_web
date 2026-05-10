@@ -283,50 +283,47 @@ http://127.0.0.1:8000
 
 ## 🏠 Dashboard
 
-```md
 <img width="1920" height="913" alt="Image" src="https://github.com/user-attachments/assets/660a9b44-b419-4018-bf49-50151fb496f5" />
-```
+
 
 
 ## ➕ Add New Task
 
-```md
+
 <img width="677" height="906" alt="Image" src="https://github.com/user-attachments/assets/1878ec15-6d5d-48cf-9397-689b9586a5d1" />
-```
+
 
 ## ✏️ Edit Task
 
-```md
+
 <img width="716" height="828" alt="Image" src="https://github.com/user-attachments/assets/4161431a-dd36-4efe-a42c-54dcd9144937" />
-```
+
 
 
 ## 🔍 Filter Feature
 
-```md
+
 <img width="1291" height="748" alt="Image" src="https://github.com/user-attachments/assets/b484c93d-ac6a-4911-a465-b06605204838" />
-```
+
 
 
 ## ✅ Delete Tasks
 
-```md
+
 <img width="1920" height="903" alt="Image" src="https://github.com/user-attachments/assets/f116bd93-5704-4d21-96b0-01e75801f866" />
 <img width="1920" height="903" alt="Image" src="https://github.com/user-attachments/assets/fddf8d70-ee5d-41bf-ae75-9c7f5df22917" />
-```
+
 
 ## ✅ Last 
 
-```md
+
 <img width="1920" height="903" alt="Image" src="https://github.com/user-attachments/assets/fddf8d70-ee5d-41bf-ae75-9c7f5df22917" />
-```
+
 
 ## ✅About
 
-```md
 <img width="1920" height="872" alt="Image" src="https://github.com/user-attachments/assets/2d04af59-5e45-4a0c-a485-09bf004d69a1" />
 <img width="1920" height="902" alt="Image" src="https://github.com/user-attachments/assets/82ea4951-87ca-4f3c-959a-e7efe9e6bcec" />
-```
 
 
 ---
