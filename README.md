@@ -8,7 +8,7 @@
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.x-purple?style=for-the-badge&logo=bootstrap)
 ![License](https://img.shields.io/badge/License-Educational-green?style=for-the-badge)
 
-### CSC336 — Web Technologies Semester Project  
+### CSC336 — Web Technologies Assignment # 03
 ### COMSATS University Islamabad, Vehari Campus
 
 </div>
