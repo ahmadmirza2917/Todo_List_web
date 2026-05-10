@@ -287,7 +287,7 @@ http://127.0.0.1:8000
 screenshots/1.png
 ```
 
-![Dashboard](screenshots/1.png)
+![Dashboard](<img width="1920" height="913" alt="Image" src="https://github.com/user-attachments/assets/660a9b44-b419-4018-bf49-50151fb496f5" />)
 
 ---
 
