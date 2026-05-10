@@ -284,7 +284,7 @@ http://127.0.0.1:8000
 ## 🏠 Dashboard
 
 <img width="1920" height="913" alt="Image" src="https://github.com/user-attachments/assets/660a9b44-b419-4018-bf49-50151fb496f5" />
-
+<img width="1920" height="913" alt="Image" src="https://github.com/user-attachments/assets/d26947c2-143d-4773-a229-74aed1b8ebdd" />
 
 
 ## ➕ Add New Task
@@ -310,15 +310,12 @@ http://127.0.0.1:8000
 ## ✅ Delete Tasks
 
 
-<img width="1920" height="903" alt="Image" src="https://github.com/user-attachments/assets/f116bd93-5704-4d21-96b0-01e75801f866" />
 <img width="1920" height="903" alt="Image" src="https://github.com/user-attachments/assets/fddf8d70-ee5d-41bf-ae75-9c7f5df22917" />
 
 
 ## ✅ Last 
 
-
-<img width="1920" height="903" alt="Image" src="https://github.com/user-attachments/assets/fddf8d70-ee5d-41bf-ae75-9c7f5df22917" />
-
+<img width="1920" height="903" alt="Image" src="https://github.com/user-attachments/assets/f116bd93-5704-4d21-96b0-01e75801f866" />
 
 ## ✅About
 
