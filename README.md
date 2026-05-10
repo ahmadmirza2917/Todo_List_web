@@ -313,9 +313,12 @@ http://127.0.0.1:8000
 <img width="1920" height="903" alt="Image" src="https://github.com/user-attachments/assets/fddf8d70-ee5d-41bf-ae75-9c7f5df22917" />
 
 
+
 ## ✅ Last 
 
 <img width="1920" height="903" alt="Image" src="https://github.com/user-attachments/assets/f116bd93-5704-4d21-96b0-01e75801f866" />
+
+
 
 ## ✅About
 
@@ -420,15 +423,7 @@ After completing this project, the following concepts were learned:
 # 🔗 GitHub Repository
 
 ```bash
-https://github.com/your-username/todo-list-laravel
-```
-
----
-
-# 🌍 Live Deployment
-
-```bash
-https://your-project-link.com
+https://github.com/ahmadmirza2917/Todo_List_web.git
 ```
 
 ---
@@ -439,8 +434,3 @@ This project is developed for **educational purposes only**.
 
 ---
 
-# ⭐ Support
-
-If you like this project, don't forget to ⭐ star the repository on GitHub.
-
----
